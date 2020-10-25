@@ -1,0 +1,21 @@
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`price-engine` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `price-engine`;
+
+/*Table structure for table `product_details` */
+
+DROP TABLE IF EXISTS `product_details`;
+
+CREATE TABLE `product_details` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `size` int(11) DEFAULT NULL,
+  `price` double(10,0) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+/*Data for the table `product_details` */
+
+insert  into `product_details`(`id`,`name`,`size`,`price`) values
+(1,'Penguin-ears',20,175),
+(2,'Horseshoe',5,825);
